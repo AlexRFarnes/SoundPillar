@@ -36,8 +36,8 @@ npm run build
 
 ## Screenshots
 
-![]()
-[Demo]()
+![image](https://user-images.githubusercontent.com/57517804/164205966-ea0b57a6-df3b-4e5b-a308-08cdad856f86.png)
+[Demo](https://threejssoundpillars.netlify.app/)
 
 ## Technologies
 
