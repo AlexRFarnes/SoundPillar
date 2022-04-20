@@ -44,7 +44,5 @@ class SoundReactor {
   }
 }
 
-const _instance = new SoundReactor(
-  "../static/sounds/Kygo-Firestoneft.ConradSewell.mp3"
-);
+const _instance = new SoundReactor("/sounds/Kygo-Firestoneft.ConradSewell.mp3");
 export default _instance;

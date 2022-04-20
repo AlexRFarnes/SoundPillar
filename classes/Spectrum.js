@@ -20,9 +20,7 @@ class Spectrum {
 
     this.uniforms = {
       uMatCap: {
-        value: this.textureLoader.load(
-          "../static/textures/matcaps/blackMetal.png"
-        ),
+        value: this.textureLoader.load("/textures/matcaps/blackMetal.png"),
       },
       uSpecterSize: {
         value: 0.6,
@@ -70,7 +68,7 @@ class Spectrum {
       transparent: true,
       uniforms: this.uniforms,
     });
-    this.loader.load("../static/models/spectrum.glb", glb => {
+    this.loader.load("/models/spectrum.glb", glb => {
       glb.scene.traverse(child => {
         if (child instanceof THREE.Mesh) {
           child.material = this.shaderMaterial;

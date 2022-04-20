@@ -24,10 +24,10 @@ class SpherePillar {
     this.baseAndPillar;
 
     const grayMetalTexture = this.textureLoader.load(
-      "../static/textures/matcaps/grayMetal.png"
+      "/textures/matcaps/grayMetal.png"
     );
     const blackMetalTexture = this.textureLoader.load(
-      "../static/textures/matcaps/blackMetal.png"
+      "/textures/matcaps/blackMetal.png"
     );
 
     this.grayMatcapMaterial = new THREE.MeshMatcapMaterial({
@@ -37,7 +37,7 @@ class SpherePillar {
       matcap: blackMetalTexture,
     });
 
-    this.loader.load("../static/models/pillar.glb", glb => {
+    this.loader.load("/models/pillar.glb", glb => {
       glb.scene.traverse(child => {
         if (child.name == "Base") {
           this.baseAndPillar = child;

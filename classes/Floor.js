@@ -11,7 +11,7 @@ class Floor {
   init(scene) {
     this.scene = scene;
     this.floor;
-    this.loader.load("../static/models/floor.glb", glb => {
+    this.loader.load("/models/floor.glb", glb => {
       glb.scene.traverse(child => {
         if (child instanceof THREE.Mesh) {
           this.floor = child;
